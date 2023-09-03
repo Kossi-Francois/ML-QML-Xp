@@ -9,3 +9,14 @@ To do that, we perform on the [CelebA dataset](https://mmlab.ie.cuhk.edu.hk/proj
 + $z \in Z$ the conditional characteristic (young/not young),
 + $f : X \mapsto H$, the features extractor in the neural network,
 + $g : H \mapsto Y$, the classifier in the neural network
+
+
+
+<p float="left" align="middle">
+  <img src="/ML_Fairness/train_result_metrics_base_model.png" width="85%">
+</p>
+
+<p float="left" align="middle">
+  <img src="/ML_Fairness/train_result_metrics_fair_model.png" width="85%">
+</p>
+
