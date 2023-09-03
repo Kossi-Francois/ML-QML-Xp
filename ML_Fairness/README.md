@@ -10,7 +10,7 @@ To do that, we perform on the [CelebA dataset](https://mmlab.ie.cuhk.edu.hk/proj
 + $f : X \mapsto H$, the features extractor in the neural network,
 + $g : H \mapsto Y$, the classifier in the neural network
 
-
+ we then define our model as the parametric function $M_{\theta} = g_{\theta_{C}} ∘ f_{\theta_{H}}(x) = g(f(x)) = g(h)$
 
 <p float="left" align="middle">
   <img src="/ML_Fairness/train_result_metrics_base_model.png" width="85%">
