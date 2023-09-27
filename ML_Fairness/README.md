@@ -11,7 +11,7 @@ To do that, we perform on the [CelebA dataset](https://mmlab.ie.cuhk.edu.hk/proj
 + $g : H \mapsto Y$, the classifier in the neural network
 
  We then define our model as the parametric function $M_{\theta} = g_{\theta_{C}} ∘ f_{\theta_{H}}(x) = g(f(x)) = g(h)$. \
- In the case of the simple model, if we consider for example precision as a metric, we see a bias as: $accuracy(x | z = 1) = 0.8044 > 0.7523 = accuracy(x | z = 0)$ \
+ In the case of the simple model, if we consider for example precision as a metric, we see a bias as: $accuracy(x | z = 1) = 0.8044 > 0.7523 = accuracy(x | z = 0)$, which means that the model has better accuracy for young people.  \
  This is also noticed in the first image, where in the feature space $f(x|z=1) = h_{z=1}$ is very close to $f(x) = h$ while $f(x|z=0) = h_{z=0}$ is different from these two. \
  To solve this problem, the idea is to use mass transport to bring $h_{z=1}$  and $h_{z=1}$  as close as possible..........
 
