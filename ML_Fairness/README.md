@@ -5,12 +5,15 @@ To do that, we perform on the [CelebA dataset](https://mmlab.ie.cuhk.edu.hk/proj
 
 *In what follows, we note 
 + $x \in X$, the data(image), 
-+ $y \in Y$, the target characteristic (smiling/not smiling),
-+ $z \in Z$ the conditional characteristic (young/not young),
++ $y \in Y = \\{ 0, 1 \\}$, the target characteristic {smiling (y = 1)/ not smiling (y = 0) },
++ $z \in Z = \\{0, 1\\}$ the conditional characteristic {young (z = 1) /not young (z = 0) } ,
 + $f : X \mapsto H$, the features extractor in the neural network,
 + $g : H \mapsto Y$, the classifier in the neural network
 
- we then define our model as the parametric function $M_{\theta} = g_{\theta_{C}} ∘ f_{\theta_{H}}(x) = g(f(x)) = g(h)$
+ We then define our model as the parametric function $M_{\theta} = g_{\theta_{C}} ∘ f_{\theta_{H}}(x) = g(f(x)) = g(h)$. \
+ In the case of the simple model, if we consider for example precision as a metric, we see a bias as: $accuracy(x | z = 1) = 0.8044 > 0.7523 = accuracy(x | z = 0)$ \
+ This is also noticed in the first image, where in the feature space $f(x|z=1) = h_{z=1}$ is very close to $f(x) = h$ while $f(x|z=0) = h_{z=0}$ is different from these two. \
+ To solve this problem, the idea is to use mass transport to bring $h_{z=1}$  and $h_{z=1}$  as close as possible..........
 
 <p float="left" align="middle">
   <img src="/ML_Fairness/train_result_metrics_base_model.png" width="85%">
