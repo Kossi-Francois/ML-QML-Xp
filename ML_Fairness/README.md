@@ -13,7 +13,12 @@ To do that, we perform on the [CelebA dataset](https://mmlab.ie.cuhk.edu.hk/proj
  We then define our model as the parametric function $M_{\theta} = g_{\theta_{C}} ∘ f_{\theta_{H}}(x) = g(f(x)) = g(h)$. \
  In the case of the simple model (top image), if we consider for example precision as a metric, we see a bias as: $accuracy(x | z = 1) = 0.8044 > 0.7523 = accuracy(x | z = 0)$, which means that the model has better accuracy for young people.  \
  This can be also noticed when we print the feature space H, where  $f(x|z=1) = h_{z=1}$ (Young_group) is very close to $f(x) = h$ (All_data) while $f(x|z=0) = h_{z=0}$ (Not_Young_group) is different from these two. \
- To solve this problem, the idea is to use mass transport to bring $h_{z=1}$ and $h_{z=0}$  as close as possible.
+ To solve this problem, the idea is to use mass transport to bring $h_{z=1}$ and $h_{z=0}$  as close as possible. 
+
+
+ In the case of the fair model (bottom image), after having optimized ($W_{D}(h_{z=1}, h_{z=0}) \to 0$ ) it to bring $h_{z=1}$ and $h_{z=0}$ close to each other, we observe two things:
+ 1. considering the Accuracy metric (for which we train the model), we notice a reduction in the gap between $accuracy(x | z = 1)$ and $accuracy(x | z = 0)$, we go from a difference of 0.0521 to 0.0412. We also notice it visually when we print H, we see that $h_{z=1}$ and $h_{z=0}$ are more similar.
+ 2. moreover we also see an improvement in accuracy
 
 <p float="left" align="middle">
   <img src="/ML_Fairness/train_result_metrics_base_model.png" width="85%">
