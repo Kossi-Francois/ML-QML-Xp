@@ -10,6 +10,12 @@ To compare the effect of a malicious client and its deletion, the classifier was
 4. fl_retrain: the model trained from scratch with the 7 good clients
 
 
+
+As result
+1. In the case of the backdoor attack, we see that the fl_secured model was immunized against the attack, producing the correct class (0) despite the presence of the backdoor in the image.
+Moreover, the accuracy curve of the fl_secured model (curve in blue) is always above of the fl_retrain model (in yellow), which would mean that for the same number of epochs we achieve a higher accuracy with the model fl_secured which corresponds to a cost saving compared to fl_retrain (if we had to retrain the model from scratch).
+
+
 <p float="left" align="middle">
   <img src="/Secure_FederatedLearning/result_plot.png" width="99%">
 </p>
