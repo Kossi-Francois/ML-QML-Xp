@@ -15,6 +15,8 @@ As result
 1. In the case of the backdoor attack, we see that the fl_secured model was immunized against the attack, producing the correct class (0) despite the presence of the backdoor in the image.
 Moreover, the accuracy curve of the fl_secured model (curve in blue) is always above of the fl_retrain model (in yellow), which would mean that for the same number of epochs we achieve a higher accuracy with the model fl_secured which corresponds to a cost saving compared to fl_retrain (if we had to retrain the model from scratch).
 
+2. However, for an adverse attack we note that the lf_secured model remains sensitive to the attack
+
 
 <p float="left" align="middle">
   <img src="/Secure_FederatedLearning/result_plot.png" width="99%">
