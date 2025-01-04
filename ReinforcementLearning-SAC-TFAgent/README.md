@@ -25,7 +25,7 @@ SAC incorporates a temperature parameter to balance the trade-off between explor
 </p> -->
 
 
-| Month    | Savings |
+| Trained Policy Agent    | Random Policy Agent |
 | -------- | ------- |
-| <img src="/LunarLander-v2-gif.gif?raw=true" width="40%"> | <img src="/LunarLander-v2_random-gif.gif?raw=true" width="40%">   |
+| <img src="./LunarLander-v2-gif.gif?raw=true" width="100%"> | <img src="./LunarLander-v2_random-gif.gif?raw=true" width="100%">   |
 
