@@ -12,17 +12,7 @@ SAC incorporates a temperature parameter to balance the trade-off between explor
 
 
 
-<!-- <p float="left" align="middle">
-  <div>
-    <p>Trained Agent</p>
-    <img src="/LunarLander-v2-gif.gif?raw=true" width="40%">
-  </div>
 
-  <div align="center" display="inline";>
-    <p>Random Agent</p>
-      <img src="/LunarLander-v2_random-gif.gif?raw=true" width="40%">
-  </div>
-</p> -->
 
 
 | Trained Policy Agent    | Random Policy Agent |
