@@ -12,35 +12,20 @@ SAC incorporates a temperature parameter to balance the trade-off between explor
 
 
 
-<p float="left" align="middle">
- <img src="/demo_people_riding_bikes.gif?raw=true" width="23%">
- <img src="/demo_sheep.gif?raw=true" width="23%">
- <img src="/demo_supermarket.gif?raw=true" width="23%">
- <img src="/demo_pizza.gif?raw=true" width="23%">
-</p>
-
-<div class="row post-image-bg" markdown="1">
-    <video width="99%" height="540" autoplay loop muted markdown="1">
-        <source src="/LunarLander-v2.mp4" type="video/mp4" markdown="1" >
-        <source src="/LunarLander-v2_random.mp4" type="video/webm" markdown="1">
-    </video>
-</div>
-
-<div style="display: flex; flex-direction: row; align-items: center; width: 100%; ">
-
-  <div style="margin-inline: 1%";>
-    <p> {title} </p>
-    <video width="620" height="470" controls autoplay>
-      <source src="/LunarLander-v2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+<!-- <p float="left" align="middle">
+  <div>
+    <p>Trained Agent</p>
+    <img src="/LunarLander-v2-gif.gif?raw=true" width="40%">
   </div>
 
-  <div style="margin-inline: 1%";>
-    <p> {title} </p>
-    <video width="620" height="470" controls autoplay>
-      <source src="/LunarLander-v2_random.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <div align="center" display="inline";>
+    <p>Random Agent</p>
+      <img src="/LunarLander-v2_random-gif.gif?raw=true" width="40%">
   </div>
-</div>
+</p> -->
+
+
+| Month    | Savings |
+| -------- | ------- |
+| <img src="/LunarLander-v2-gif.gif?raw=true" width="40%"> | <img src="/LunarLander-v2_random-gif.gif?raw=true" width="40%">   |
+
