@@ -26,5 +26,5 @@ To solve this problem, we will use the following steps:
 
 
 After solving the problem, we will compare the results with the analytical solution of the problem.
-![texte du lien](https:placeholder)
+![texte du lien](./outputs/res_plot.png))
 
